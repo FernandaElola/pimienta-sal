@@ -13,10 +13,10 @@
       <!-- About Section -->
       <div class="ps-row ps-padding-64" id="about">
 
-        <% about.forEach(itemAbout => { %>       
+              
         <div class="ps-col m6 ps-padding-large ps-hide-small">
           <img
-            src="/images/<%= itemAbout.image %>"
+            src="/images/<%= imageAbout %>"
             class="ps-round ps-image ps-opacity-min"
             alt="Sabores que enamoran"
             width="600"
@@ -25,9 +25,8 @@
         </div>
 
         <div class="ps-col m6 ps-padding-large">
-          <h1 class="ps-center"><%= itemAbout.title %></h1>
+          <h1 class="ps-center"><%= title %></h1>
           <br />
-          <% }) %>
 
           <p class="ps-large">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur
