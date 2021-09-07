@@ -54,9 +54,9 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />  
           
-          <% products.forEach(product => { %>          
-            <h4><a href="/detalleMenu/<%= product.id %> "><%= product.name %></a></h4>
-            <p class="ps-text-grey"><%= product.description %> u$s <%= product.price.toFixed(2) %></p>
+          <% dishes.forEach(dish => { %>          
+            <h4><a href="/detalleMenu/<%= dish.id %> "><%= dish.name %></a></h4>
+            <p class="ps-text-grey"><%= dish.description %> u$s <%= dish.price.toFixed(2) %></p>
             <br />
             <% }) %>
           </div>

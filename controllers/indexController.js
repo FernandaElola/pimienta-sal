@@ -1,18 +1,18 @@
 const fs = require('fs');
 const path = require('path');
-let products = JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','products.json'),'utf-8'));
+let dishes = JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','dishes.json'),'utf-8'));
 
 module.exports = {
     index : (req,res) => {
         return res.render('index', {
         title : "Pimienta & Sal",
         imageAbout : "principal.jpg",
-        products : JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','products.json'),'utf-8')),
+        dishes 
     });
 },
     detail : (req,res) => {
        return res.render('detalleMenu', {
-        product : products.find(product => product.id === +req.params.id)
+        dish : dishes.find(dish => dish.id === +req.params.id)
        });
     }
 }
